@@ -1,0 +1,25 @@
+version: 2
+sources:
+  - name: adventureworks  # Tên nguồn dữ liệu, có thể tùy ý đặt tên
+    schema: Staging      # Schema chứa các bảng trong PostgreSQL
+    tables:
+      - name: product_staging
+        description: "Bảng staging chứa thông tin về sản phẩm."
+
+      - name: region_staging
+        description: "Bảng staging chứa thông tin về khu vực."
+
+      - name: reseller_staging
+        description: "Bảng staging chứa thông tin về nhà bán lẻ."
+
+      - name: sales_staging
+        description: "Bảng staging chứa dữ liệu bán hàng thô cần được xử lý."
+
+      - name: salesperson_staging
+        description: "Bảng staging chứa dữ liệu thô về nhân viên bán hàng cần được xử lý."
+
+      - name: salespersonregion_staging
+        description: "Bảng staging chứa thông tin về khu vực mà nhân viên bán hàng phụ trách."
+
+      - name: targets_staging
+        description: "Bảng staging chứa dữ liệu thô về mục tiêu bán hàng cần được xử lý."
